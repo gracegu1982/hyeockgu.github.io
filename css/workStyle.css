@@ -1,0 +1,164 @@
+/* 공통 시작 */
+body { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    /* -webkit-animation: mymove 10s infinite;
+    animation: mymove 10s infinite; */
+    font-size: 100%;
+}
+@-webkit-keyframes mymove {
+    from {background-color: black;}
+    to {background-color: rgb(60, 60, 60);}
+}
+@keyframes mymove {
+    from {background-color:black;}
+    to {background-color: rgb(60, 60, 60);}
+}
+.topNav {
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+}
+#logo {
+    float: left;
+    color: #f2f2f2;
+    margin-inline-start: 30px;
+}
+#logo a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+#logo a:hover {
+    color: #1e64e6;
+    text-decoration: none;
+}
+.topMenu {
+    text-align: end;
+    list-style: none;
+    float: right;
+    margin-inline-end: 30px;
+    margin-top: 30px;
+}
+.topMenu li {
+    float: left;
+}
+.topMenu a {
+    font-size: 0.9em;
+    color: gray;
+    text-decoration: none;
+    padding-left: 15px;
+}
+.topMenu a:hover {
+    color: #1e64e6;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.footnav {
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+}
+.copyright {
+    margin-inline-end: 30px;
+    margin-bottom: 5px;
+    font-size: 0.6em;
+    color: gray;
+    float: right;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+.footMenu {
+    text-align: start;
+    list-style: none;
+    float: left;  
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+.footMenu li {
+    float: left;
+}
+.footMenu a {
+    font-size: 0.9em;
+    color: gray;
+    text-decoration: none;
+    padding-right: 15px;
+    display: block;
+}
+.footMenu a:hover {
+    color: #1e64e6;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* 공통 끝 */
+/* work 시작 */
+.workSlideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 0;
+}
+.mySlides {
+    display: none;
+    vertical-align: middle;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 30px;
+    color: #f2f2f2;
+    font-weight: bold;
+    font-size: 3em;
+    transition: 0.6s ease;
+    user-select: none;
+    text-decoration: none;
+}
+.next {
+    right: 0;
+}
+.slidesText {
+    color: #f2f2f2;
+    font-size: 1.5em;
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+}
+.numberText {
+    position: relative;
+    color: #f2f2f2;
+    font-size: 5em;
+    text-align: start;
+    top: 40px;
+    left: 30px;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from { opacity: .4;}
+    to { opacity: 1;}
+}
+@keyframes fade {
+    from { opacity: .4;}
+    to {opacity: 1;}
+}
+@media only screen and (max-width: 300px) {
+    .prev, .next, .slidesText {
+        font-size: 11px;
+    }
+}
+/* work 끝 */
+
