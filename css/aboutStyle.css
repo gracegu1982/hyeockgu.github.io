@@ -1,0 +1,91 @@
+/* 공통 시작 */
+body { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    font-size: 100%;
+}
+.topNav {
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+}
+#logo {
+    float: left;
+    margin-inline-start: 30px;
+}
+#logo a {
+    color: gray;
+    text-decoration: none;
+}
+#logo a:hover {
+    color: #1e64e6;
+    text-decoration: none;
+}
+.topMenu {
+    text-align: end;
+    list-style: none;
+    float: right;
+    margin-inline-end: 30px;
+    margin-top: 30px;
+}
+.topMenu li {
+    float: left;
+}
+.topMenu a {
+    font-size: 0.9em;
+    color: gray;
+    text-decoration: none;
+    padding-left: 15px;
+}
+.topMenu a:hover {
+    color: #1e64e6;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.footnav {
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+}
+.copyright {
+    margin-inline-end: 30px;
+    margin-bottom: 5px;
+    font-size: 0.6em;
+    color: gray;
+    float: right;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+.footMenu {
+    text-align: start;
+    list-style: none;
+    float: left;  
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+.footMenu li {
+    float: left;
+}
+.footMenu a {
+    font-size: 0.9em;
+    color: gray;
+    text-decoration: none;
+    padding-right: 15px;
+    display: block;
+}
+.footMenu a:hover {
+    color: #1e64e6;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* 공통 끝 */
+/* about 시작 */
+
+/* about 끝 */
