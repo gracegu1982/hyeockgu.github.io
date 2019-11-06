@@ -3,27 +3,18 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    /* background-color: black; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Courier New', Courier, monospace, 'Franklin Gothic Medium', 'Arial Narrow', Arial, 'Trebuchet MS', sans-serif;
     width: 100%;
     height: 100%;
-    background-color:black;
-    /* -webkit-animation: mymove 10s infinite;
-    animation: mymove 10s infinite; */
+    background-color: #101010;
     font-size: 100%;
 }
-@-webkit-keyframes mymove {
-    from {background-color: black;}
-    to {background-color: rgb(60, 60, 60);}
-}
-@keyframes mymove {
-    from {background-color:black;}
-    to {background-color: rgb(60, 60, 60);}
-}
+
 .topNav {
     margin: 0 auto;
     width: 100%;
     display: inline-block;
+    letter-spacing: 1px;
 }
 #logo {
     float: left;
@@ -33,6 +24,7 @@ body {
 #logo a {
     color: #f2f2f2;
     text-decoration: none;
+    
 }
 #logo a:hover {
     color: #1e64e6;
@@ -50,12 +42,12 @@ body {
 }
 .topMenu a {
     font-size: 0.9em;
-    color: gray;
+    color: #f2f2f2;
     text-decoration: none;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 .topMenu a:hover {
-    color: #1e64e6;
+    color: #f2f2f2;
     background-color: transparent;
     text-decoration: underline;
 }
@@ -65,16 +57,20 @@ body {
     display: inline-block;
 }
 .copyright {
+    transform: rotate(90deg) translate(-8.5rem,-10rem);
+    transform-origin: left top;
+    letter-spacing: 1px;
     margin-inline-end: 30px;
     margin-bottom: 5px;
     font-size: 0.6em;
-    color: gray;
+    color: #3c3e41;
     float: right;
     position: fixed;
     right: 0px;
     bottom: 0px;
 }
 .footMenu {
+    letter-spacing: 1px;
     text-align: start;
     list-style: none;
     float: left;  
@@ -86,17 +82,10 @@ body {
     float: left;
 }
 .footMenu a {
-    font-size: 0.9em;
-    color: gray;
-    text-decoration: none;
-    padding-right: 15px;
+    padding-right: 20px;
     display: block;
 }
-.footMenu a:hover {
-    color: #1e64e6;
-    background-color: transparent;
-    text-decoration: underline;
-}
+
 /* 공통 끝 */
 /* work 시작 */
 .workSlideshow-container {
