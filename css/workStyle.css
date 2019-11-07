@@ -97,6 +97,7 @@ body {
 .mySlides {
     display: none;
     vertical-align: middle;
+    
 }
 .prev, .next {
     cursor: pointer;
@@ -116,11 +117,14 @@ body {
 }
 .slidesText {
     color: #f2f2f2;
-    font-size: 1.5em;
+    font-size: 5em;
     position: absolute;
-    top: 55%;
+    top: 20%;
     width: 100%;
-    text-align: center;
+    text-align: start;
+    margin-left: 130px;
+    line-height: 1;
+    /* text-align: center; */
 }
 .numberText {
     position: relative;
