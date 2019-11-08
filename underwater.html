@@ -9,7 +9,13 @@
 </head>
 <body>
     <header>
-    <div class="topNav">
+    <div id="navbar">
+        <a class="logo" href="index.html">G</a>
+            <a class="active" href="underwater.html">UNDERWATER</a>
+            <a href="work.html">WORK</a>
+            <a href="about.html">ABOUT</a>
+    </div>
+    <!-- <div class="topNav">
         <h1 id="logo">
             <a href="index.html">G</a>
         </h1>
@@ -20,9 +26,9 @@
                 <li><a href="underwater.html">UNDERWATER</a></li>
             </ul>
         </nav>
-    </div>
+    </div> -->
     </header>
-    <main>
+    <main class="content">
     <div class="topDesignText">
         <!-- <p>I was a designer<br>based in Seoul.</p> -->
         <p>Text text text text<br>Text text text text</p>
@@ -90,6 +96,21 @@
         <div class="copyright"><p>&copy; 2019 DESIGN HYEOCK GU</p></div>
     </div>
     </footer>
+    <script>
+        window.onscroll = function() {
+            topFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function topFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
     
 </body>
 </html>

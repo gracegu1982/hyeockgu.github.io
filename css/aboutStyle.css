@@ -9,47 +9,55 @@ body {
     background-color: #f2f2f2;
     font-size: 100%;
 }
+#navbar {
+overflow: hidden;
+background-color: #f2f2f2;
 
-.topNav {
-    margin: 0 auto;
+}
+#navbar a {
+margin-inline-end: 30px;
+margin-top: 30px;
+float: right;
+display: block;
+color: #101010;
+text-align: center;
+padding-bottom: 30px;
+text-decoration: none;
+font-size: 0.9em;
+letter-spacing: 1px;
+}
+#navbar .logo {
+float: left;
+display: block;
+color: #101010;
+text-align: center;
+padding-bottom: 30px;
+text-decoration: none;
+font-size: 2em;
+margin-inline-start: 30px;
+}
+#navbar a:hover {
+color: #101010;
+background-color: transparent;
+text-decoration: underline;
+}
+#navbar a.active {
+color: #101010;
+background-color: transparent;
+text-decoration: underline;
+}
+.content {
+    padding: 10px;
+}
+.sticky {
+    position: fixed;
+    top: 0px;
     width: 100%;
-    display: inline-block;
-    letter-spacing: 1px;
 }
-#logo {
-    float: left;
-    color: #101010;
-    margin-inline-start: 30px;
-}
-#logo a {
-    color: #101010;
-    text-decoration: none;
-    
-}
-#logo a:hover {
-    color: #1e64e6;
-    text-decoration: none;
-}
-.topMenu {
-    text-align: end;
-    list-style: none;
-    float: right;
-    margin-inline-end: 30px;
-    margin-top: 30px;
-}
-.topMenu li {
-    float: left;
-}
-.topMenu a {
-    font-size: 0.9em;
-    color: #101010;
-    text-decoration: none;
-    padding-left: 20px;
-}
-.topMenu a:hover {
-    color: #101010;
-    background-color: transparent;
-    text-decoration: underline;
+.sticky + .content {
+    padding-top: 60px;
+    position: fixed;
+    top: 0px;
 }
 .footnav {
     margin: 0 auto;

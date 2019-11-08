@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>HYEOCK GU</title>
     <link rel="stylesheet" media="screen" type="text/css" href="css/aboutStyle.css"/>
 </head>
 <body>
     <header>
-    <div class="topNav">
-        <h1 id="logo">
-            <a href="index.html">G</a>
-        </h1>
-        <nav>
-            <ul class="topMenu">
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="work.html">WORK</a></li>
-                <li><a href="underwater.html">UNDERWATER</a></li>
-            </ul>
-        </nav>
+    <div id="navbar">
+        <a class="logo" href="index.html">G</a>
+            <a href="underwater.html">UNDERWATER</a>
+            <a href="work.html">WORK</a>
+            <a class="active" href="about.html">ABOUT</a>
     </div>
     </header>
-    <main>
+    <main class="content">
     <div>
         <h3 id="hello">Hello,</h3>
         <p id="firstText">I'm Hyeok-Gu from Korea.<br>I live in Vancouver and recently studied web & mobile app development at Cornerstone International Community College.<br>I graduated from graphic design and worked as a designer in Korea for about 10 years.</p>
@@ -59,8 +53,7 @@
             <li><img src="images/phone_b.png" alt="mail" height="20px">(236)558-8151</li>
             <li><img src="images/marker_b.png" alt="mail" height="20px">Vancouver, BC</li>
         </ul>
-    </div>
-    
+    </div>  
     </main>
     <footer>
     <div class="footNav">
@@ -74,6 +67,21 @@
         <div class="copyright"><p>&copy; 2019 DESIGN HYEOCK GU</p></div>
     </div>
     </footer>
+    <script>
+        window.onscroll = function() {
+            topFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function topFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
     
 </body>
 </html>
