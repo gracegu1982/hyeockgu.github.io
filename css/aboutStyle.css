@@ -11,8 +11,7 @@ body {
 }
 #navbar {
 overflow: hidden;
-background-color: #f2f2f2;
-
+background-color: rgba(242, 242, 242, 0.8);
 }
 #navbar a {
 margin-inline-end: 30px;
@@ -31,9 +30,8 @@ float: left;
 display: block;
 color: #101010;
 text-align: center;
-padding-bottom: 30px;
 text-decoration: none;
-font-size: 2em;
+font-size: 1em;
 margin-inline-start: 30px;
 }
 #navbar a:hover {
@@ -48,44 +46,29 @@ text-decoration: underline;
 }
 .content {
     padding: 10px;
+    margin-bottom: 50px;
 }
 .sticky {
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
     z-index: 100;
 }
-.sticky + .content {
-    padding-top: 60px;
-    position: fixed;
-    top: 0px;
-    display: inline-block;
-}
 #footbar {
-    overflow: hidden;
-    background-color: #f2f2f2;
-    left: 0px;
-    bottom: 0px;
     position: fixed;
-    }
+    background-color: rgba(242, 242, 242, 0.8);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2rem;
+    z-index: 100;
+    padding-top: 10px;
+}
 #footbar a {
     margin-inline-start: 30px;
     margin-bottom: 5px;
     float: left;
     display: block;
-    
- 
-
-/* margin-inline-end: 30px;
-margin-top: 30px;
-float: right;
-display: block;
-color: #101010;
-text-align: center;
-padding-bottom: 30px;
-text-decoration: none;
-font-size: 0.9em;
-letter-spacing: 1px; */
 }
 .footnav {
     margin: 0 auto;
@@ -97,7 +80,6 @@ letter-spacing: 1px; */
     transform-origin: left top;
     letter-spacing: 1px;
     margin-inline-end: 30px;
-    margin-bottom: 5px;
     font-size: 0.6em;
     color: #3c3e41;
     float: right;
@@ -105,23 +87,6 @@ letter-spacing: 1px; */
     right: 0px;
     bottom: 0px;
 }
-.footMenu {
-    letter-spacing: 1px;
-    text-align: start;
-    list-style: none;
-    float: left;  
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-}
-.footMenu li {
-    float: left;
-}
-.footMenu img {
-    padding-right: 20px;
-    display: block;
-}
-
 /* 공통 끝 */
 /* about 시작 */
 #hello {
