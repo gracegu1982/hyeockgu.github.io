@@ -59,6 +59,33 @@ text-decoration: underline;
     padding-top: 60px;
     position: fixed;
     top: 0px;
+    display: inline-block;
+}
+#footbar {
+    overflow: hidden;
+    background-color: #f2f2f2;
+    left: 0px;
+    bottom: 0px;
+    position: fixed;
+    }
+#footbar a {
+    margin-inline-start: 30px;
+    margin-bottom: 5px;
+    float: left;
+    display: block;
+    
+ 
+
+/* margin-inline-end: 30px;
+margin-top: 30px;
+float: right;
+display: block;
+color: #101010;
+text-align: center;
+padding-bottom: 30px;
+text-decoration: none;
+font-size: 0.9em;
+letter-spacing: 1px; */
 }
 .footnav {
     margin: 0 auto;
