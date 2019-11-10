@@ -11,7 +11,7 @@ body {
 }
 #navbar {
 overflow: hidden;
-background-color: rgba(242, 242, 242, 0.8);
+background-color: rgba(242, 242, 242, 0.3);
 }
 #navbar a {
 margin-inline-end: 30px;
@@ -56,7 +56,7 @@ text-decoration: underline;
 }
 #footbar {
     position: fixed;
-    background-color: rgba(242, 242, 242, 0.8);
+    background-color: rgba(242, 242, 242, 0.3);
     left: 0;
     right: 0;
     bottom: 0;
@@ -176,7 +176,6 @@ text-decoration: underline;
     letter-spacing: 1px;
     color: #101010;
 }
-
 .skillTable td {
     /* border: 1px solid black; */
     font-weight: lighter;
@@ -186,6 +185,10 @@ text-decoration: underline;
     padding-bottom: 10px;
     padding-top: 10px;
 }
-
-
+#upBtn {
+    display: scroll;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+}
 /* about 끝 */
