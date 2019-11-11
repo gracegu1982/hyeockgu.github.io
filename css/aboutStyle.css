@@ -20,7 +20,7 @@ float: right;
 display: block;
 color: #101010;
 text-align: center;
-padding-bottom: 30px;
+padding-bottom: 12px;
 text-decoration: none;
 font-size: 0.9em;
 letter-spacing: 1px;
@@ -33,6 +33,7 @@ text-align: center;
 text-decoration: none;
 font-size: 1em;
 margin-inline-start: 30px;
+margin-top: 25px;
 }
 #navbar a:hover {
 color: #101010;
