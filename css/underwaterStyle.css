@@ -154,13 +154,14 @@ main img {
     right: 60px;
     z-index: 100;
 }
+/* mobile layout 시작 */
 @media only screen and (max-width:600px) {
     #navbar {
         overflow: hidden;
         background-color: rgba(242, 242, 242, 1);
         }
     #navbar a {
-        margin-inline-end: 20px;
+        margin-inline-end: 30px;
         margin-top: 30px;
         float: right;
         display: block;
@@ -168,29 +169,19 @@ main img {
         text-align: center;
         padding-bottom: 12px;
         text-decoration: none;
-        font-size: 0.5em;
+        font-size: 0.7em;
         letter-spacing: 1px;
         }
-        #navbar .logo {
-        float: left;
-        display: block;
-        color: #101010;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1em;
-        margin-inline-start: 30px;
-        margin-top: 25px;
-        }
-        #navbar a:hover {
-        color: #101010;
-        background-color: transparent;
-        text-decoration: underline;
-        }
-        #navbar a.active {
-        color: #101010;
-        background-color: transparent;
-        text-decoration: underline;
-        }
+    #footbar {
+        position: fixed;
+        background-color: rgba(242, 242, 242, 1);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2rem;
+        z-index: 100;
+        padding-top: 10px;
+    }
 
     .topDesignText {
         font-weight: lighter;

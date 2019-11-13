@@ -156,3 +156,32 @@ text-decoration: underline;
 }
 /* work 끝 */
 
+/* mobile layout 시작 */
+@media only screen and (max-width:600px) {
+    #navbar {
+        overflow: hidden;
+        background-color: rgba(16, 16, 16, 1);
+        }
+    #navbar a {
+        margin-inline-end: 30px;
+        margin-top: 30px;
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding-bottom: 12px;
+        text-decoration: none;
+        font-size: 0.7em;
+        letter-spacing: 1px;
+        }
+    #footbar {
+        position: fixed;
+        background-color: rgba(16, 16, 16, 1);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2rem;
+        z-index: 100;
+        padding-top: 10px;
+    }
+}
