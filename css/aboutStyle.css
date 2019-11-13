@@ -221,4 +221,23 @@ text-decoration: underline;
         z-index: 100;
         padding-top: 10px;
     }
+    #hello {
+        letter-spacing: 1px;
+        font-size: 3em;
+        text-align: end;
+        margin-right: 70%;
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: 30px;
+        color: #1e64e6;
+    }
+    #firstText {
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 1.5em;
+        text-align: start;
+        margin-right: 30px;
+        margin-left:30%; 
+        color: #101010;
+    }
 }
