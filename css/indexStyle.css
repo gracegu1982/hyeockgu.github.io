@@ -45,10 +45,6 @@ color: #f2f2f2;
 background-color: transparent;
 text-decoration: underline;
 }
-.content {
-    padding: 20px;
-    margin-bottom: 50px;
-}
 .sticky {
     position: fixed;
     top: 0;
@@ -99,6 +95,8 @@ text-decoration: underline;
     z-index: -1000;
 }
 .content {
+    padding: 20px;
+    margin-bottom: 50px;
     font-weight: lighter;
     text-align: center;
     letter-spacing: 5px;
@@ -193,5 +191,21 @@ text-decoration: underline;
         left: -50%;
         bottom: 0;
         z-index: -1000;
+    }
+    .content {
+        /* padding: 20px; */
+        /* margin-bottom: 50px; */
+        font-weight: lighter;
+        text-align: center;
+        letter-spacing: 5px;
+        display: block;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);  */
+    }
+    #hello {
+        color: #f2f2f2;
+        font-size: 1.5em;
     }
 }
