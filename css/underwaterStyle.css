@@ -157,7 +157,7 @@ main img {
 @media only screen and (max-width:600px) {
     #navbar {
         overflow: hidden;
-        background-color: rgba(242, 242, 242, 0.3);
+        background-color: rgba(242, 242, 242, 1);
         }
     #navbar a {
         margin-inline-end: 20px;
@@ -191,6 +191,16 @@ main img {
         background-color: transparent;
         text-decoration: underline;
         }
+
+    .topDesignText {
+        font-weight: lighter;
+        letter-spacing: 1px;
+        font-size: 2em;
+        text-align: start;
+        margin-right: 30px;
+        margin-left:30%; 
+        color: #101010;
+    }
     .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
