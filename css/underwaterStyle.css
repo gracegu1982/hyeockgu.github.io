@@ -155,6 +155,10 @@ main img {
     z-index: 100;
 }
 @media only screen and (max-width:600px) {
+    #navbar {
+        overflow: hidden;
+        background-color: rgba(242, 242, 242, 0.3);
+        }
     #navbar a {
         margin-inline-end: 20px;
         margin-top: 30px;
@@ -164,7 +168,7 @@ main img {
         text-align: center;
         padding-bottom: 12px;
         text-decoration: none;
-        font-size: 0.3em;
+        font-size: 0.5em;
         letter-spacing: 1px;
         }
         #navbar .logo {
