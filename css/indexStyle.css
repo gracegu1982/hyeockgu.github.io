@@ -188,7 +188,7 @@ text-decoration: underline;
         position: fixed;
         height: 100%;
         top: 0;
-        left: -50%;
+        /* left: -50%; */
         bottom: 0;
         z-index: -1000;
     }
