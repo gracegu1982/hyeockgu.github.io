@@ -189,8 +189,9 @@ text-decoration: underline;
     #intro {
         position: fixed;
         top: 0;
-        left: -500;
+        /* left: 0; */
         /* min-width: 100%; */
+        right: 0;
         min-height: 100%;
         width: auto;
         height: 100%;
