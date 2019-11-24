@@ -90,9 +90,11 @@ text-decoration: underline;
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1000;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
 }
 .content {
     padding: 20px;
@@ -186,11 +188,13 @@ text-decoration: underline;
     }
     #intro {
         position: fixed;
-        height: 100%;
         top: 0;
-        left: -100%;
-        bottom: 0;
-        z-index: -1000;
+        left: -465;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: 100%;
+        z-index: -1;
     }
     .content {
         /* padding: 20px; */
