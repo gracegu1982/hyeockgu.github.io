@@ -84,13 +84,16 @@ label,
   text-decoration: none;
 }
 #nav li a:hover {
-  color: black;
+  color: darkgrey;
   background-color: transparent;
   text-decoration: underline;
   cursor: pointer;
 }
 #nav li a:visited {
   color: black;
+}
+#nav li a::after {
+  text-decoration: none;
 }
 #nav li a.active {
   color: black;
