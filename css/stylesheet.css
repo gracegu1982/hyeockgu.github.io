@@ -152,7 +152,9 @@ label,
   display: inline;
   margin-top: 70px;
   margin-right: 30px;
+  width: 30px;
 }
+
 /* work */
 #main h3 {
   text-align: left;
