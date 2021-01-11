@@ -97,7 +97,7 @@ label,
 #nav li a.active {
   color: black;
   background-color: transparent;
-  text-decoration: underline wavy;
+  text-decoration: underline;
 }
 /* 푸터 */
 #footer address ul {
