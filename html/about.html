@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-about</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="../css/stylesheet.css" />
+</head>
+<body>
+    <header id="header">
+        <h3 id="logo" alt="Hyeock"></h3>
+        <label for="toggle" onclick>MENU</label>
+        <input type="checkbox" id="toggle"/>
+        <ul id="nav">
+            <li><a class="active" href="../html/index.html"></a>Work</li>
+            <li><a href="../html/about.html"></a>About</li>
+            <li><a href="../html/leftovers.html"></a>Leftovers</li>
+        </ul>
+    </header>
+    <main id="about">
+        <h1></h1>
+        <h3>About<br>Me.</h3>
+        <ul>
+            <li class="icon"><img src="../images/GitHub-Mark_b.png" alt="" /></li>
+            <li class="icon"><img src="../images/GitHub-Mark_b.png" alt="" /></li>
+            <li class="icon"><img src="../images/GitHub-Mark_b.png" alt="" /></li>
+            <li class="icon"><img src="../images/GitHub-Mark_b.png" alt="" /></li>
+            <li class="icon"><img src="../images/GitHub-Mark_b.png" alt="" /></li>
+            <li class="icon"><img src="../images/GitHub-Mark_b.png" alt="" /></li>
+        </ul>
+        <p>Hello, I am Hyeock Gu from South Korea and I live in Vancouver.<br>
+            I studied web & mobile app development at Cornerstone International Community College.<br>
+            I have experience as a web designer for more than 10 years and my strength is that I have knowledge of the process of how to work from the vast experience.<br>
+            I have creative ideas that will help elevate your business.<br></p>
+        
+    </main>
+    <footer id="footer">
+        <address>
+            <ul>
+            <li><a href=""></a>Email</li>
+            <li><a href=""></a>Github</li>
+            <li><a href=""></a>LinkdIn</li>
+            </ul>
+       </address>
+        <p>Hyeock Gu &copy; 2021</p>
+    </footer>
+    <script>
+        window.onscroll = function() {
+            topFunction()
+        };
+        var navbar = document.getElementById("header");
+        var sticky = navbar.offsetTop;
+
+        function topFunction() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
+    
+</body>
+</html>

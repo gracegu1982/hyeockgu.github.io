@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-work</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="../css/stylesheet.css" />
+</head>
+<body>
+    <header id="header">
+        <h3 id="logo" alt="Hyeock"></h3>
+        <label for="toggle" onclick>MENU</label>
+        <input type="checkbox" id="toggle"/>
+        <ul id="nav">
+            <li><a class="active" href="../html/index.html"></a>Work</li>
+            <li><a href="../html/about.html"></a>About</li>
+            <li><a href="../html/leftovers.html"></a>Leftovers</li>
+        </ul>
+    </header>
+    <main id="main">
+        <h3>Hyeock<br>Gu.</h3>
+        <p>I am a passionate designer and front-end developer from South Korea. <br>See some work and send me an email if you want to work with me.</p>
+        <div class="worrk-grid">
+            <article class="location-listing">
+              <a class="location-title" href="#">San Francisco</a>
+              <div class="location-image">
+                <a href="#">
+                    <img src="../images/work01.png" alt="san francisco"></a>
+              </div>
+            </article>
+            <article class="location-listing">
+              <a class="location-title" href="#">London</a>
+              <div class="location-image">
+                <a href="#">
+                    <img src="../images/work02.png" alt="london"></a>
+              </div>
+            </article>
+            <article class="location-listing">
+              <a class="location-title" href="#">New York</a>
+              <div class="location-image">
+                <a href="#">
+                    <img src="../images/work03.png" alt="new york"></a>
+              </div>
+            </article>
+            <article class="location-listing">
+              <a class="location-title" href="#">Cape Town</a>
+              <div class="location-image">
+                <a href="#">
+                    <img src="../images/work04.png" alt="cape town"></a>
+              </div>
+            </article>
+          </div>
+          <!-- end grid container -->
+    </main>
+    <footer id="footer">
+        <address>
+            <ul>
+            <li><a href=""></a>Email</li>
+            <li><a href=""></a>Github</li>
+            <li><a href=""></a>LinkdIn</li>
+            </ul>
+       </address>
+        <p>Hyeock Gu &copy; 2021</p>
+    </footer>
+    <script>
+        window.onscroll = function() {
+            topFunction()
+        };
+        var navbar = document.getElementById("header");
+        var sticky = navbar.offsetTop;
+
+        function topFunction() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
+</body>
+</html>

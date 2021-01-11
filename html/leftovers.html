@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-leftovers</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="../css/stylesheet.css" />
+</head>
+<body>
+    <header id="header">
+      <h3 id="logo" alt="Hyeock"></h3>
+      <label for="toggle" onclick>MENU</label>
+      <input type="checkbox" id="toggle"/>
+      <ul id="nav">
+          <li><a class="active" href="../html/index.html"></a>Work</li>
+          <li><a href="../html/about.html"></a>About</li>
+          <li><a href="../html/leftovers.html"></a>Leftovers</li>
+      </ul>
+    </header>
+        <div class="leftovers-grid">
+          <article class="location-listing">
+            <a class="location-title">San Francisco</a>
+            <div class="location-image">
+                  <img src="../images/underwater18.png" alt="san francisco"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">London</a>
+            <div class="location-image">
+                  <img src="../images/underwater17.png" alt="london"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">New York</a>
+            <div class="location-image">
+                  <img src="../images/underwater16.png" alt="new york"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">Cape Town</a>
+            <div class="location-image">
+                  <img src="../images/underwater15.png" alt="cape town"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">Beijing</a>
+            <div class="location-image">
+                  <img src="../images/underwater14.png" alt="beijing"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">Paris</a>
+            <div class="location-image">
+                  <img src="../images/underwater13.png" alt="paris"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">San Francisco</a>
+            <div class="location-image">
+                  <img src="../images/underwater12.png" alt="san francisco"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">London</a>
+            <div class="location-image">
+                  <img src="../images/underwater11.png" alt="london"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">New York</a>
+            <div class="location-image">
+                  <img src="../images/underwater10.png" alt="new york"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">Cape Town</a>
+            <div class="location-image">
+                  <img src="../images/underwater09.png" alt="cape town"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">Beijing</a>
+            <div class="location-image">
+                  <img src="../images/underwater08.png" alt="beijing"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">Paris</a>
+            <div class="location-image">
+                  <img src="../images/underwater07.png" alt="paris"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">London</a>
+            <div class="location-image">
+                  <img src="../images/underwater06.png" alt="london"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">New York</a>
+            <div class="location-image">
+                  <img src="../images/underwater05.png" alt="new york"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">Cape Town</a>
+            <div class="location-image">
+                  <img src="../images/underwater04.png" alt="cape town"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">Beijing</a>
+            <div class="location-image">
+                  <img src="../images/underwater03.png" alt="beijing"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">Paris</a>
+            <div class="location-image">
+                  <img src="../images/underwater02.png" alt="paris"></a>
+            </div>
+          </article>
+          <article class="location-listing">
+            <a class="location-title">Paris</a>
+            <div class="location-image">
+                  <img src="../images/underwater01.png" alt="paris"></a>
+            </div>
+          </article>
+        </div>
+        <!-- end grid container -->
+
+    <footer id="footer">
+        <address>
+            <ul>
+            <li><a href=""></a>Email</li>
+            <li><a href=""></a>Github</li>
+            <li><a href=""></a>LinkdIn</li>
+            </ul>
+       </address>
+        <p>Hyeock Gu &copy; 2021</p>
+    </footer>
+    <script>
+        window.onscroll = function() {
+            topFunction()
+        };
+        var navbar = document.getElementById("header");
+        var sticky = navbar.offsetTop;
+
+        function topFunction() {
+            if (window.pageYOffset > sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky")
+            }
+        }
+    </script>
+</body>
+</html>
