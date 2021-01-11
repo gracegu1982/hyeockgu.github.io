@@ -80,13 +80,19 @@ label,
   font-weight: 500;
   letter-spacing: 0em;
 }
-#nav li:hover {
+#nav li a {
+  text-decoration: none;
+}
+#nav li a:hover {
   color: black;
   background-color: transparent;
   text-decoration: underline;
   cursor: pointer;
 }
-#nav li .active {
+#nav li a:visited {
+  color: black;
+}
+#nav li a.active {
   color: black;
   background-color: transparent;
   text-decoration: underline;
