@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio-work-milk</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+    <header id="header">
+        <a href="https://hyeockgu.github.io" alt="Hyeock"><h3 id="logo"></h3></a>
+        <label for="toggle" onclick>MENU</label>
+        <input type="checkbox" id="toggle"/>
+        <ul id="nav">
+            <li><a class="active" href="https://hyeockgu.github.io/index.html">Work</a></li>
+            <li><a href="https://hyeockgu.github.io/about.html">About</a></li>
+            <li><a href="https://hyeockgu.github.io/leftovers.html">Leftovers</a></li>
+        </ul>
+    </header>
+        <main>
+            <article id="top">
+                <img src="images/milk_1.jpg" />
+                <h3>Milk.</h3>
+                <p>iOS App and landing page for platform</p>
+                
+            </article>
+            <article id="middle">
+                <img src="images/milk_2.jpg" />
+                <p>Shared housekeeping book for family or roommates.<br>
+                    The habit of managing money, Make it together!</p>
+                    <div class="clearfix"></div>
+            </article>
+            <article id="backcolor">
+                <span><button class="detailButton"><a href="work_pickrecipes.html" target="_self">Next</a></button></span>
+            </article>
+    
+        </main>
+        <script>
+            window.onscroll = function() {
+                topFunction()
+            };
+            var navbar = document.getElementById("header");
+            var sticky = navbar.offsetTop;
+    
+            function topFunction() {
+                if (window.pageYOffset > sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky")
+                }
+            }
+        </script>
+    
+</body>
+</html>
