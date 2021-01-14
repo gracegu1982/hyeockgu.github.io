@@ -11,6 +11,9 @@ body {
   font-size: 100%;
 }
 /* 네비게이션 스크린 사이즈 */
+@media screem amd (min-width: 1280px) {
+  body
+}
 @media screen and (max-width: 600px) {
   #nav {
     display: none;
