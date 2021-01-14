@@ -255,7 +255,7 @@ label,
   transform: scale(1.1);
 }
 .location-title {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
   text-decoration: none;
   z-index: 1;
