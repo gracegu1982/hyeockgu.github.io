@@ -1,4 +1,3 @@
-/* 공통 */
 html,
 body {
   margin: 0px;
@@ -11,6 +10,7 @@ body {
   background-color: #ffffff;
   font-size: 100%;
 }
+/* 네비게이션 스크린 사이즈 */
 @media screen and (max-width: 600px) {
   #nav {
     display: none;
@@ -65,7 +65,6 @@ body {
   background-position: 80% 80% 80% 80%;
   background-size: 30px 30px;
 }
-
 label,
 #toggle {
   display: none;
@@ -121,135 +120,7 @@ label,
   margin: 170px 70px 70px 50px;
   float: right;
 }
-/* ---------------------------- */
-/* about */
-#about h1 {
-  height: 40vh;
-  background: url("../images/abouttop.jpeg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-#about h3 {
-  text-align: left;
-  margin: 0px 140px 0 140px;
-  font-size: 6em;
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 1em;
-}
-#about p {
-  text-align: left;
-  width: 40vw;
-  margin: 70px 140px 0 140px;
-  font-size: 1.5em;
-  font-weight: 300;
-  letter-spacing: 0em;
-  line-height: 1.5em;
-}
-#about ul {
-  width: 30vw;
-  margin-left: auto;
-  margin-right: 140px;
-}
-.icon {
-  float: right;
-  list-style: none;
-  display: inline;
-  margin-top: 70px;
-  margin-right: 30px;
-}
-
-/* work */
-#main h3 {
-  text-align: left;
-  margin: 0px 140px 0 140px;
-  font-size: 6em;
-  font-weight: 600;
-  letter-spacing: 0em;
-  line-height: 1em;
-}
-#main p {
-  text-align: left;
-  width: 40vw;
-  margin: 70px 140px 0 140px;
-  font-size: 1.5em;
-  font-weight: 300;
-  letter-spacing: 0em;
-  line-height: 1.5em;
-}
-/* work 그리드 */
-.worrk-grid img {
-  width: 100%; /* need to overwrite inline dimensions */
-  height: auto;
-}
-.worrk-grid {
-  margin: 70px 140px 0 140px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 3em;
-}
-/* leftovers 그리드 */
-.leftovers-grid img {
-  width: 100%; /* need to overwrite inline dimensions */
-  height: auto;
-}
-.leftovers-grid {
-  margin: 0 140px 0 140px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 3em;
-}
-/* 그리드 공통 */
-/* hover styles */
-.location-listing {
-  position: relative;
-}
-.location-image {
-  line-height: 0;
-  overflow: hidden;
-}
-.location-image img {
-  filter: blur(0px);
-  transition: filter 0.3s ease-in;
-  transform: scale(1.1);
-}
-.location-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s;
-  background: rgba(255, 255, 255, 0.8);
-  color: rgb(0, 0, 0);
-  /* position the text in t’ middle*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.location-listing:hover .location-title {
-  opacity: 1;
-}
-
-.location-listing:hover .location-image img {
-  filter: blur(2px);
-}
-/* for touch screen devices */
-@media (hover: none) {
-  .location-title {
-    opacity: 1;
-  }
-  .location-image img {
-    filter: blur(2px);
-  }
-}
-/* 그리드 끝 */
-/* ---------------------------- */
+/* 푸터 버튼 스타일 */
 .detailButton {
   background-color: transparent;
   text-decoration: none;
@@ -293,7 +164,131 @@ label,
   opacity: 1;
   right: 0;
 }
-/* --------------------- */
+/* ----------공통 끝------------- */
+/* about */
+#about h1 {
+  height: 40vh;
+  background: url("../images/abouttop.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#about h3 {
+  text-align: left;
+  margin: 0px 140px 0 140px;
+  font-size: 6em;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 1em;
+}
+#about p {
+  text-align: left;
+  width: 40vw;
+  margin: 70px 140px 0 140px;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0em;
+  line-height: 1.5em;
+}
+#about ul {
+  width: 30vw;
+  margin-left: auto;
+  margin-right: 140px;
+}
+.icon {
+  float: right;
+  list-style: none;
+  display: inline;
+  margin-top: 70px;
+  margin-right: 30px;
+}
+/* home */
+#home h3 {
+  text-align: left;
+  margin: 0px 140px 0 140px;
+  font-size: 6em;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 1em;
+}
+#home p {
+  text-align: left;
+  width: 40vw;
+  margin: 70px 140px 0 140px;
+  font-size: 1.5em;
+  font-weight: 300;
+  letter-spacing: 0em;
+  line-height: 1.5em;
+}
+/* home 그리드 */
+.worrk-grid img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+.worrk-grid {
+  margin: 70px 140px 0 140px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 3em;
+}
+/* leftovers 그리드 */
+.leftovers-grid img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+.leftovers-grid {
+  margin: 0 140px 0 140px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 3em;
+}
+/* 그리드 공통 hover styles */
+.location-listing {
+  position: relative;
+}
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+/* for touch screen devices */
+@media (hover: none) {
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+/* 그리드 끝 */
 
 /* #back {
   width: 100%;
@@ -315,48 +310,85 @@ label,
   font-size: 2em;
 } */
 
-#top img {
+/* work 스타일 공통 */
+#topcontents img {
   display: block;
   margin: 0 auto;
+  width: 100%;
   /* margin-top: 0px;
   margin-right: 140px;
   margin-left: 140px; */
   /* width: fit-content; */
-  width: 100%;
 }
-#top h3 {
+#topcontents h3 {
   text-align: left;
   margin: 70px 140px 0 140px;
   font-size: 6em;
   font-weight: 600;
   letter-spacing: 0em;
 }
-#top p {
+#topcontents p {
   text-align: left;
   width: 60vw;
   margin: 30px 140px 0 140px;
-  font-size: 1em;
-  font-weight: 300;
-  letter-spacing: 0em;
-  line-height: 1.5em;
-}
-#middle {
-  display: inline;
-}
-#middle img {
-  float: right;
-  margin-top: 70px;
-  margin-right: 170px;
-  display: block;
-}
-#middle p {
-  text-align: left;
-  width: 30vw;
-  margin: 170px 140px 0 140px;
   font-size: 1.5em;
   font-weight: 300;
   letter-spacing: 0em;
   line-height: 1.5em;
+}
+#middlecontents_first {
+  display: inline;
+}
+#middlecontents_first img {
+  float: right;
+  margin-top: 70px;
+  margin-right: 140px;
+  display: block;
+}
+#middlecontents_first p {
+  text-align: left;
+  width: 30vw;
+  margin: 70px 140px 0 140px;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.4em;
+}
+#middlecontents_second {
+  display: inline;
+}
+#middlecontents_second img {
+  float: left;
+  margin-top: 70px;
+  margin-left: 140px;
+  width: 40vw;
+}
+#middlecontents_second p {
+  float: right;
+  width: 30vw;
+  margin: 70px 140px 0px 0px;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.4em;
+}
+#lastcontents {
+  display: inline;
+}
+#lastcontents img {
+  float: right;
+  margin-top: 70px;
+  margin-right: 140px;
+  display: block;
+}
+#lastcontents p {
+  float: left;
+  width: 30vw;
+  margin: 70px 0px 0px 140px;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.4em;
 }
 .clearfix {
   clear: both;
@@ -371,6 +403,7 @@ label,
   background-size: auto 170px;
   background-position: center; */
   margin-top: 170px;
+  margin-bottom: 0%;
 }
 #backcolor a {
   margin: 25px 140px 0 140px;
