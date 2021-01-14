@@ -390,6 +390,33 @@ label,
   letter-spacing: 0em;
   line-height: 1.4em;
 }
+#list_left {
+  text-align: left;
+  width: 30vw;
+  margin: 30px 0 0 140px;
+  padding: 0;
+}
+#list_left li {
+  list-style: none;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 1.8em;
+}
+#list_right {
+  float: right;
+  text-align: left;
+  width: 30vw;
+  margin: 30px 140px 0 0px;
+  padding: 0;
+}
+#list_right li {
+  list-style: none;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 1.8em;
+}
 .clearfix {
   clear: both;
 }
