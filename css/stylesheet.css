@@ -944,6 +944,7 @@ label,
     margin-right: 1.25rem;
     margin-bottom: 1.25rem;
     max-width: 10%;
+    object-fit: cover;
   }
   /* 푸터 */
   #footer address ul {
