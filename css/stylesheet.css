@@ -1129,3 +1129,32 @@ label,
     color: white;
   }
 }
+
+/*------ 스크린 사이즈 1024 ------*/
+@media screen and (max-width: 1024px) {
+  main {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .worrk-grid img {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+  .worrk-grid {
+    margin: 4.375rem 8.75rem 0 8.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 2em;
+  }
+  /* leftovers 그리드 */
+  .leftovers-grid img {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+  .leftovers-grid {
+    margin: 0 8.75rem 0 8.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 2em;
+  }
+}
