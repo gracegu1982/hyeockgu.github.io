@@ -174,7 +174,7 @@ label,
   margin-left: auto;
   margin-right: 8.75rem;
 }
-.icon {
+#icon {
   list-style: none;
   display: flex;
   margin-top: 4.375rem;
@@ -183,8 +183,12 @@ label,
   padding: 0;
   flex-wrap: wrap;
 }
-.icon img {
+.icon-img {
   margin-right: 1.875rem;
+}
+.icon-img img {
+  width: 80px;
+  height: 80px;
 }
 /* home */
 #home h3 {
@@ -574,19 +578,20 @@ label,
     letter-spacing: 0em;
     line-height: 1.5em;
   }
-  .icon {
+  #icon {
     list-style: none;
     display: flex;
-    margin-top: 3.125rem;
-    margin-right: 1.25rem;
-    margin-left: 1.25rem;
+    margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    margin-left: 1.25rem;
   }
-  .icon img {
-    margin-right: 1.25rem;
-    margin-bottom: 1.25rem;
-    max-width: 20%;
+  .icon-img {
+    margin-right: 0.625rem;
+  }
+  .icon-img img {
+    width: 50px;
+    height: 50px;
   }
   /* 푸터 */
   #footer address ul {
@@ -931,20 +936,20 @@ label,
     letter-spacing: 0em;
     line-height: 1.5em;
   }
-  .icon {
+  #icon {
     list-style: none;
     display: flex;
-    margin-top: 3.125rem;
-    margin-right: 1.25rem;
-    margin-left: 1.25rem;
+    margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    margin-left: 1.25rem;
   }
-  .icon img {
-    margin-right: 1.25rem;
-    margin-bottom: 1.25rem;
-    max-width: 10%;
-    /* object-fit: cover; */
+  .icon-img {
+    margin-right: 0.625rem;
+  }
+  .icon-img img {
+    width: 50px;
+    height: 50px;
   }
   /* 푸터 */
   #footer address ul {
