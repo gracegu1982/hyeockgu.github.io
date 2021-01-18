@@ -168,10 +168,15 @@ label,
   margin-right: 8.75rem;
 }
 .icon {
-  float: right;
   list-style: none;
-  display: inline;
+  display: flex;
   margin-top: 4.375rem;
+  margin-right: 8.75rem;
+  margin-left: 8.75rem;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.icon img {
   margin-right: 1.875rem;
 }
 /* home */
@@ -555,6 +560,19 @@ label,
     line-height: 1.5em;
   }
   .icon {
+    list-style: none;
+    display: flex;
+    margin-top: 3.125rem;
+    margin-right: 8.75rem;
+    margin-left: 1.25rem;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .icon img {
+    margin-right: 1.25rem;
+    max-width: 30%;
+  }
+  /* .icon {
     margin-top: 3.125rem;
     display: inline-block;
     padding: 0;
@@ -565,7 +583,7 @@ label,
     margin-right: 1.25rem;
     margin-bottom: 1.25rem;
     float: left;
-  }
+  } */
   /* 푸터 */
   #footer address ul {
     margin: 0;
@@ -622,15 +640,12 @@ label,
     }
   }
   /* work 스타일 공통 */
-  #topcontents h1 {
-    height: 30vh;
-    background: url("../images/milk_1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vmax;
-    margin-left: 1.25rem;
-  }
   #topcontents img {
-    display: none;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    max-width: 100%;
   }
   #topcontents h3 {
     text-align: left;
@@ -653,16 +668,17 @@ label,
     display: block;
   }
   #middlecontents_first img {
-    margin-top: 3.125rem;
-    margin-right: 1.25rem;
-    margin-left: 1.25rem;
-    width: 100%;
-    text-align: center;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    max-width: 100%;
+    float: none;
   }
   #middlecontents_first p {
     text-align: left;
     margin: 3.125rem 1.25rem 0 1.25rem;
-    width: 80vw;
+    width: 70vw;
     font-size: 1em;
     font-weight: 300;
     letter-spacing: 0em;
